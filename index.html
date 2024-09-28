@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Payment Form</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Payment Form</h2>
+        <form id="payment-form">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+                <span class="error" id="name-error"></span>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+                <span class="error" id="email-error"></span>
+            </div>
+            <div class="form-group">
+                <label for="card-number">Card Number:</label>
+                <input type="text" id="card-number" name="cardNumber">
+                <div class="payment-icons">
+                    <img class="payment-icon" id="visa-icon" src="./assets/images/visa.png" alt="Visa">
+                    <img class="payment-icon" id="mastercard-icon" src="./assets/images/master.png" alt="Mastercard">
+                    <img class="payment-icon" id="amex-icon" src="./assets/images/american-express.png" alt="American Express">
+                    <img class="payment-icon" id="paypal-icon" src="./assets/images/paypal.png" alt="PayPal">
+                    <img class="payment-icon" id="maestro-icon" src="./assets/images/maestro.png" alt="Maestro">
+                </div>
+                <span class="error" id="card-number-error"></span>
+            </div>
+            <div >
+                <label for="expiration-month">Expiration Month:</label>
+                <select id="expiration-month" name="expirationMonth">
+            
+                </select>
+                <span class="error" id="expiration-month-error"></span>
+            </div>
+            <div class="form-group">
+                <label for="expiration-year">Expiration Year:</label>
+                <select id="expiration-year" name="expirationYear">
+                
+                </select>
+                <span class="error" id="expiration-year-error"></span>
+            </div>
+            <div class="form-group">
+                <label for="cvv">CVV:</label>
+                <input type="text" id="cvv" name="cvv">
+                <span class="error" id="cvv-error"></span>
+            </div>
+            <button type="submit">Make Payment</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
